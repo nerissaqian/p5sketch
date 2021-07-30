@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 50px;
+    }
+  </style>
+  <script src="../p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <h1> black-out poetry </h1>
+  <p> select a poem: </p>
+  <p>
+    <button id = "aedh_wishes"> Aedh Wishes... </button>
+    <button id = "annabel_lee"> Annabel Lee </button>
+    <button id = "evening_solace"> Evening Solace </button>
+    <button id = "tamerlane"> Tamerlane </button>
+  </p>
+  <br>
+  <p> or input your own: </p>
+  <p><textarea id = "userPoem" rows = 25 cols = 50 ></textarea></p>
+  <p><button id = "submit"> submit </button></p>
+  <br>
+  <p> select an option below, to either 'black-out' or 'white-out' (reveal)
+    individual<br>words from your generated poem, by clicking with your mouse. </p>
+  <p>
+    <button id = "blackout"> black-out </button>
+    <button id = "whiteout"> white-out </button>
+  </p>
+  <br>
+  <p id = "output"></p>
+
+</body>
+
+</html>
